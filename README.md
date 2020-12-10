@@ -10,9 +10,11 @@ conda create -n dlflask python=3.7 tensorflow flask pillow
 conda activate dlflask
 ```
 
-At the moment, later versions of python lead to incompatibilities between tensorflow and flask
+At the moment, later versions of python lead to incompatibilities 
+between tensorflow and flask
 
-* install flast-restful with pip (not available in conda) : 
+* install flast-restful with pip 
+(since this package is not available in conda) : 
 
 ```
 pip install flask-restful
@@ -21,10 +23,14 @@ pip install flask-restful
 ## Predict a cat
 
 ```
-python predict_resnet50.py
+python predict_resnet50.py capuchon.jpg
 ```
 
+Of course, you can try with a picture of yours.
+
 ## Flask hello world
+
+Just a very short example of how to use Flask-RESTful.
 
 Start the app server: 
 
@@ -42,7 +48,7 @@ curl localhost:5000/hello
 }
 ```
 
-## Predicting image categories 
+## Predicting image categories with a REST API
 
 ```
 curl localhost:5000/image -F file=@capuchon.jpg

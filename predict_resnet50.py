@@ -34,5 +34,8 @@ def predict(fname):
 if __name__ == '__main__':
 
     import pprint
-    results = predict('capuchon.jpg')
+    import sys
+
+    file_name = sys.argv[1]
+    results = predict(file_name)
     pprint.pprint(results)
