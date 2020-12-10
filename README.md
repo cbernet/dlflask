@@ -44,3 +44,35 @@ curl localhost:5000/hello
 
 ## Predicting image categories 
 
+```
+curl localhost:5000/image -F file=@capuchon.jpg
+```
+
+Gives : 
+
+```
+{
+    "top_categories": [
+        [
+            "tiger_cat",
+            0.5858142375946045
+        ],
+        [
+            "Egyptian_cat",
+            0.21068987250328064
+        ],
+        [
+            "tabby",
+            0.14554421603679657
+        ],
+        [
+            "pillow",
+            0.008319859392940998
+        ],
+        [
+            "lynx",
+            0.006789662875235081
+        ]
+    ]
+}
+```
