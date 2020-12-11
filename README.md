@@ -1,5 +1,7 @@
 # Deploying a Tensorflow Model with Flask
 
+![](capuchon.jpg)
+
 ## Installation 
 
 * install miniconda
